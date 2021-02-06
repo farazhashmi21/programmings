@@ -1,0 +1,64 @@
+#!/usr/bin/perl
+# Arrays are Scalars With Indexes
+$beep = "\a";
+$count = 0;
+@age = (19,29,39);
+print("$beep");
+print("@age");
+print("\n$age[2]");
+print("\n$age[1]");
+print("\n$age[0]");
+@week = qw\SUNDAY MONDAY TUESDAY WEDNESDAY THURSDAY FRIDAY SATURDAY\;
+$length = @week;
+$counter = 0;
+while($counter < $length)
+{
+	print("\n$week[$counter]");
+		$counter++;
+}
+print("\nTotal Length of an \$week array is: ".scalar @week."");
+$max = $#week;
+print("\nMaximum length of an array \$week is: $max");
+@abcd = (A..Z);
+print("\n@abcd");
+@counting = (0..9);
+print("\n@counting");
+@values = (A,B,C);
+print("\n@values");
+pop(@values);
+print("\n@values");
+push(@values,"C");
+print("\n@values");
+shift(@values);
+print("\n@values");
+unshift(@values,"A");
+print("\n@values");
+@slice = @week[4..7];
+print("\n@slice");
+@count = (1..30);
+print("\n@count");
+splice(@count,10,10,41..50);
+print("\n@count");
+$text = "I LOVE YOU";
+@word = split(" ",$text);
+print("\n@word = $text");
+$a = "a,b,c";
+$b = "1,2,3";
+@c = split(',',$a);
+@d = split(",",$b);
+$e = join(",",@c).",".join(",",@d);
+print("\n$e");
+@ae = (31,21,11);
+@ea = sort(@ae);
+print("\n@ae");
+print("\n@ea");
+@s = ("a","z","e");
+@z = sort(@s);
+print("\n@s");
+print("\n@z");
+@merge = (@count,@week);
+print("\n@merge");
+@list = (5,4,3,2,1)[1..3];
+print("\n@list");
+@tt = (5,4,3,2,1)[3];
+print("\n@tt");

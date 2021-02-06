@@ -1,0 +1,4 @@
+# Perl5 Testing
+
+$text = "Assalam-O-Alaiqum";
+print($text);
