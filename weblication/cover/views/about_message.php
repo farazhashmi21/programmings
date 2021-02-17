@@ -2,7 +2,7 @@
 <body class="bg-light">
 <div class="container">
 <div class="jumbotron text-center">
-<h1 class=""><a href="<?php echo base_url(); ?>">Wellcome To Home</a></h1>
+<h1 class=""><a href="<?php echo site_url(); ?>">Wellcome To Home</a></h1>
 <h2 class="badge">Home Site For Internet Testing</h2>
 </div>
 <?php include('links.php'); ?>
