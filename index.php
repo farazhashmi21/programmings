@@ -12,12 +12,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <base target="_blank"/>
     </head>
   <body>
   <div class="jumbotron text-center">
     <?php
-  echo "<h1  class=''>Wellcome To Programming Zone</p>";
-  echo "<p class='badge badge-secondary'>Love Programming";
+  echo "<h1  class=''>Wellcome To Programming Zone</h1>";
+  echo "<p class='badge badge-secondary'>Love Programming</p>";
   ?>
   </div>
     <!--[if lt IE 7]>
@@ -35,15 +37,12 @@
   </div>
   </div>
   </div>
-  <script src="" async defer></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    <footer class="jumbotron">
+    <footer class="jumbotron text-center">
     <div class="container">
     <div class="row">
     <div class="col">
     <?php
-  echo"<p>Meet The Developer: <a href='https://github.com/farazhashmi21' title='Engr  Syed Muhammad Faraz Hashmi' target='_blank'>Faraz Hashmi</a>";
+  echo"<p>Copyright - &#169; - <script>document.write(new Date().getFullYear());</script></p>";
   ?>
   </div>
   <div class="col">
@@ -52,12 +51,24 @@
   ?>
   </div>
   <div class="col">
-    <?php
-  echo"<p>Meet The Developer: <a href='https://github.com/farazhashmi21' title='Engr  Syed Muhammad Faraz Hashmi' target='_blank'>Faraz Hashmi</a>";
-  ?>
+  <div class="">
+  <ul class="list-group list-group-horizontal">
+  <li class="list-group-item">
+ <a href="https://facebook.com/muhammadfaraz745"><i class='fab fa-facebook'></i></a>
+ </li>
+  <li class="list-group-item">
+  <a href="https://twitter.com/farazhashmi21"><i class='fab fa-twitter-square'></i></li></a>
+  <li class="list-group-item">
+  <a href="https://instagram.com/muhammadfaraz745"><i class='fab fa-instagram'></i></a>
+  </li>
+  </ul>
   </div>
   </div>
   </div>
 </footer>
-  </body>
+<script src="" async defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+      </body>
 </html>
