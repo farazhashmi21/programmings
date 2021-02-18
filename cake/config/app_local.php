@@ -4,6 +4,7 @@
  * Copy and save this file as app_local.php and make changes as required.
  * Note: It is not recommended to commit files with credentials such as app_local.php
  * into source code version control.
+ * Lessons: https://book.cakephp.org/4/en/index.html
  */
 return [
     /*
@@ -44,10 +45,10 @@ return [
              */
             //'port' => 'non_standard_port_number',
 
-            'username' => 'my_app',
-            'password' => 'secret',
+            'username' => 'developerfarazhashmi',
+            'password' => 'cV57$*wO',
 
-            'database' => 'my_app',
+            'database' => '',
             /**
              * If not using the default 'public' schema with the PostgreSQL driver
              * set it here.
