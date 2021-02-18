@@ -34,6 +34,7 @@
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
  * @filesource
+ * Online Guide: https://www.codeigniter.com/userguide3/index.html
  */
 
 /*

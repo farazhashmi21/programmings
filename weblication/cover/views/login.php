@@ -140,32 +140,50 @@ span.psw {
 
 <div id="container">
 	<h1>Welcome to CodeIgniter!</h1>
-
 	<div id="body">
-<form action="<?php $this->load->helper('url'); echo base_url(); ?>/checkLogin" method="post">
+	<?php
+	  $attributes = array('class' => 'loginForm', 'id' => 'loginForm');
+	  echo form_open('checkLogin', $attributes);
+	  ?>
   <div class="imgcontainer">
     <img src="" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
+	<?php
+	  $data = array('placeholder' => "Enter Username", 'name' => "uname", 'required' => 'required');
+	  echo form_input($data);
+	  ?>
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-    <p><?php echo $this->session->flashdata('msg'); ?></p>
+	<?php
+	  $data = array(
+		'placeholder' => 'Enter Password',
+		'name' => 'psw',
+		'required' => 'required'
+	  );
+	  echo form_password($data);
+	?>
+	<?php
+	  echo form_submit('submitButton','Submit');
+	?>
+	  <?php
+		echo form_label('Remember Me ');
+	    echo form_checkbox('rembrMe', 'remember', TRUE);
+		?>
+    <p><?php //echo $this->session->flashdata('msg'); ?></p>
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
+	<?php
+	  echo form_reset('formReset', 'Clear');
+	?>
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
-</form>	</div>
+  <?php
+    echo form_close();
+	?>
+</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 </div>

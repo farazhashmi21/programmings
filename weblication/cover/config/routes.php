@@ -53,6 +53,7 @@ $route['default_controller'] = 'Hello';
 $route['about'] = 'Hello/about';
 $route['contact'] = 'Hello/reachus';
 $route['login'] = 'Auth';
+$route['checkLogin'] = 'Auth/check_login';
 $route['calc'] = 'Calculator';
 $route['calc/add'] = 'Calculator/add';
 $route['calc/subs'] = 'Calculator/subs';

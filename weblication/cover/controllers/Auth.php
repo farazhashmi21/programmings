@@ -25,7 +25,7 @@ class Auth extends CI_Controller {
 	{
 	  $this->load->view('login');
 	}
-        public function create_session(){
+  public function create_session(){
           $user_data = array('user_id' => 101, 'user_email' => 'cvf21@gmail.com', 'user_name' => 'prankster101');
           $this->session->user_data = $user_data;
           echo "<p>Session has been created successfully</p>";
